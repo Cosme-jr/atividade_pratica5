@@ -59,20 +59,21 @@ O preço final do produto é: R$ 120.00
 ### 4. 📅 Calculadora de Dias de Vida
 **Arquivo:** `calculadora_dias_vida.py`
 
-Programa que calcula quantos dias uma pessoa está viva baseado na sua idade.
+Programa que calcula quantos dias uma pessoa está viva baseado na data exata de nascimento.
 
 **Funcionalidades:**
-- Converte anos, meses e dias em total de dias
-- Usa aproximação de 365 dias por ano e 30 dias por mês
-- Interação simples com o usuário
+- Calcula dias de vida usando data de nascimento real
+- Utiliza a biblioteca `datetime` para cálculos precisos
+- Considera anos bissextos e variações mensais
+- Formatação de data brasileira (DD/MM/AAAA)
 
 **Exemplo de uso:**
 ```
-Digite a quantidade de anos: 25
-Digite a quantidade de meses: 6
-Digite a quantidade de dias: 15
-Você está vivo há 9310 dias.
+Digite sua data de nascimento (DD/MM/AAAA): 15/03/1998
+Você está vivo há 9661 dias.
 ```
+
+**Versão alternativa:** Também disponível versão simplificada que usa aproximação de anos, meses e dias.
 
 ## 🚀 Como Executar
 
@@ -90,6 +91,10 @@ Você está vivo há 9310 dias.
    python calculadora_dias_vida.py
    ```
 
+**Nota:** O exercício 4 possui duas versões:
+- Versão com `datetime` (mais precisa, usa data exata)
+- Versão simplificada (aproximação com anos/meses/dias)
+
 ## 📚 Conceitos Abordados
 
 - **Funções:** Definição, parâmetros e valores de retorno
@@ -99,18 +104,21 @@ Você está vivo há 9310 dias.
 - **Estruturas condicionais:** `if/else`
 - **Operações matemáticas:** Cálculos percentuais e arredondamento
 - **Loops:** Implementação manual de algoritmos
+- **Biblioteca datetime:** Manipulação e cálculos com datas
+- **Formatação de datas:** Parsing de strings para objetos datetime
 
 ## 🛠️ Tecnologias Utilizadas
 
 - **Python 3.x**
-- Bibliotecas nativas (sem dependências externas)
+- **Biblioteca datetime** (nativa do Python)
+- Demais funcionalidades usam apenas bibliotecas nativas
 
 ## 📝 Observações
 
 - Todos os programas incluem interação com o usuário via terminal
 - Os valores monetários são formatados em Real (R$)
 - O verificador de palíndromo implementa inversão de string de forma manual para fins educativos
-- A calculadora de dias de vida usa aproximações simples (não considera anos bissextos)
+- A calculadora de dias de vida possui duas versões: uma com cálculos precisos usando `datetime` e outra com aproximações simples
 
 ## 🤝 Contribuições
 
